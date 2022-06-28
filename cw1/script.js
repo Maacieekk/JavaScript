@@ -1,13 +1,13 @@
 let ndx = 0;
 const data = [
    { title : "pink lake",
-    src : "image/1.webp" },
+    src : "Image/1.webp" },
 
   {  title : "drugie",
-    src : "image/2.webp"},
+    src : "Image/2.webp"},
 
    { title : "trzecie",
-    src : "image/3.webp"}
+    src : "Image/3.webp"}
 ]
 
 function changeHTMLinfo(ndx)
@@ -25,15 +25,18 @@ function changeHTMLinfo(ndx)
 const left = document.querySelector('.lefftArr')
 left.onclick = function(){
     console.log("click")
+if (ndx > 0)
+{
 ndx = ndx-1;
-
+}
 changeHTMLinfo(ndx);
 }
 
 const right = document.querySelector('.rightArr')
 right.onclick = function(){
     console.log("click")
-ndx = ndx+1;
-
+if (ndx < 4){
+    ndx = ndx+1;
+}
 changeHTMLinfo(ndx);
 }
