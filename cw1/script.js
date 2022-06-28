@@ -29,6 +29,7 @@ if (ndx > 0)
 {
 ndx = ndx-1;
 }
+else ndx = 2;
 changeHTMLinfo(ndx);
 console.log(ndx)
 }
@@ -39,6 +40,7 @@ right.onclick = function(){
 if (ndx < 2){
     ndx = ndx+1;
 }
+else ndx = 0;
 changeHTMLinfo(ndx);
 console.log(ndx)
 }
