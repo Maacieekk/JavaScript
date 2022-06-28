@@ -24,19 +24,21 @@ function changeHTMLinfo(ndx)
 //  console.log(newdom)
 const left = document.querySelector('.lefftArr')
 left.onclick = function(){
-    console.log("click")
+    console.log(ndx)
 if (ndx > 0)
 {
 ndx = ndx-1;
 }
 changeHTMLinfo(ndx);
+console.log(ndx)
 }
 
 const right = document.querySelector('.rightArr')
 right.onclick = function(){
-    console.log("click")
-if (ndx < 4){
+    console.log(ndx)  
+if (ndx < 2){
     ndx = ndx+1;
 }
 changeHTMLinfo(ndx);
+console.log(ndx)
 }
