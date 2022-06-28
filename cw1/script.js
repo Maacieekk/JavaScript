@@ -3,10 +3,10 @@ const data = [
    { title : "pink lake",
     src : "Image/1.webp" },
 
-  {  title : "drugie",
+  {  title : "blue lagoon",
     src : "Image/2.webp"},
 
-   { title : "trzecie",
+   { title : "forrest pound",
     src : "Image/3.webp"}
 ]
 
