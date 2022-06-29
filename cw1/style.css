@@ -1,5 +1,5 @@
 /* *{
-    border: 1px  white;
+    border: 1px dashed rgb(238, 94, 94);
 } */
 .main2 {
     display: flex;
@@ -46,4 +46,18 @@ h1, h2 {
 img:hover {
     border: 2px solid black;
     cursor: pointer;
+}
+.box1 {
+    display: flex;
+    justify-content: center;
+}
+.div1, .div2, .div3{
+    display: block;
+    cursor: pointer;
+
+}
+
+
+.div1::before, .div1::after {
+    content: ".";
 }
