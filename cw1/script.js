@@ -44,10 +44,17 @@ else ndx = 0;
 changeHTMLinfo(ndx);
 console.log(ndx)
 }
-const div1 = document.querySelector('.div1')
-div1.onclick = function(){
-ndx = div1.innerText
-changeHTMLinfo(ndx);
-console.log(ndx+"   navigacja")
+// const div1 = document.querySelector('.div1')
+// div1.onclick = function(){
+// ndx = div1.innerText - 1;
+// changeHTMLinfo(ndx);
+// console.log(ndx+"   navigacja")
+
+// }
+function mojaFunkcja(ndx)
+{
+    
+    console.log(ndx+"dziala")
+    changeHTMLinfo(ndx);
 
 }
