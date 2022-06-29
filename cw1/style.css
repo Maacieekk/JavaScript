@@ -1,6 +1,10 @@
 /* *{
     border: 1px dashed rgb(238, 94, 94);
 } */
+.front {
+ background-image: radial-gradient(circle, blue, aqua,white, white);
+ }
+
 .main2 {
     display: flex;
     justify-content: space-between;
@@ -9,29 +13,21 @@
 }
 
 footer {
-    /* display: flex;
-    align-items: flex-end;
-    justify-content: right; */
     margin-top: 4rem;
     text-align: right;
 }
 
 .rightArr, .lefftArr {
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;  */
-     padding: 1rem;  /*    dobre */
-    background-color: blue;
-    border-radius: 50%;
+    padding: 0.3rem;  /*    dobre */
+    background-color:  blue;
+    background-image: linear-gradient( blue, aqua, blue);
+    border-radius: 30%;
     cursor: pointer;
+    color: solid black;
+    font-size: 40px;
 }
 
 .content {
-    /* width: 300px;
-    height: 200px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,24 +35,26 @@ footer {
 h1, h2 {
     text-align: center;
 }
+
 .rightArr:hover, .lefftArr:hover {
     color: red;
 
 }
+
 img:hover {
     border: 2px solid black;
     cursor: pointer;
 }
+
 .box1 {
     display: flex;
     justify-content: center;
 }
+
 .div1, .div2, .div3{
     display: block;
     cursor: pointer;
-
 }
-
 
 .div1::before, .div1::after {
     content: ".";

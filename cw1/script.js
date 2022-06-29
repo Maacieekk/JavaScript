@@ -1,3 +1,5 @@
+// zmienne/stałe
+
 let ndx = 0;
 const data = [
    { title : "pink lake",
@@ -9,52 +11,39 @@ const data = [
    { title : "forrest pound",
     src : "Image/3.webp"}
 ]
+// metody/funkcje
 
 function changeHTMLinfo(ndx)
 {
-    console.log(data[ndx].title,data[ndx].src);
     const obraz = document.querySelector('.obraz')
     obraz.src = data[ndx].src;
     const h2 = document.querySelector('h2')
     h2.innerText = data[ndx].title;
 }
 
-// const zdjęcia = document.createElement("div")
-//  newdom.innerHTML = "jakiś tekst"
-//  console.log(newdom)
+function takeImg(ndx)
+{
+    changeHTMLinfo(ndx);
+}
+
+// program/eventy
+
 const left = document.querySelector('.lefftArr')
 left.onclick = function(){
-    console.log(ndx)
-if (ndx > 0)
-{
-ndx = ndx-1;
+
+if (ndx > 0){
+    ndx = ndx-1;
 }
 else ndx = 2;
 changeHTMLinfo(ndx);
-console.log(ndx)
 }
 
 const right = document.querySelector('.rightArr')
 right.onclick = function(){
-    console.log(ndx)  
+     
 if (ndx < 2){
     ndx = ndx+1;
 }
 else ndx = 0;
 changeHTMLinfo(ndx);
-console.log(ndx)
-}
-// const div1 = document.querySelector('.div1')
-// div1.onclick = function(){
-// ndx = div1.innerText - 1;
-// changeHTMLinfo(ndx);
-// console.log(ndx+"   navigacja")
-
-// }
-function mojaFunkcja(ndx)
-{
-    
-    console.log(ndx+"dziala")
-    changeHTMLinfo(ndx);
-
 }
